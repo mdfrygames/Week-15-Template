@@ -8,14 +8,19 @@ template<typename T>
 T half(T);
 
 
-template<typename int>
-int half(int num) {
-	return round(static_cast<float>(num) / 2);
-}
+template<int T>
+int half(int);
 
 
 int main() {
 
+	double a = 7.0;
+	float b = 5.0f;
+	int c = 3;
+
+	cout << half(a) << endl;
+	cout << half(b) << endl;
+	cout << half(c) << endl;
 	return 0;
 }
 
